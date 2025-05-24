@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,80,84,105"/>
+<area shape="rect" id="Node000001" href="$classAlertsTab.html" title="Widget que muestra una tabla con los componentes cuyo stock está por debajo de un umbral predefinido." alt="" coords="144,5,227,31"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="77,71,131,40,154,28,156,33,133,44,79,75"/>
+<area shape="rect" id="Node000002" href="$classInventoryTab.html" title="Representa la pestaña de interfaz gráfica para la gestión de inventario." alt="" coords="132,55,239,80"/>
+<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="97,81,131,74,132,80,98,86"/>
+<area shape="rect" id="Node000003" href="$classReportTab.html" title="Pestaña de la interfaz de usuario encargada de generar reportes de inventario." alt="" coords="142,104,229,129"/>
+<area shape="poly" id="edge5_Node000000_Node000003" title=" " alt="" coords="98,99,142,107,141,112,97,104"/>
+<area shape="rect" id="Node000004" href="$classSearchTab.html" title="Clase que proporciona una interfaz para buscar componentes dentro del inventario." alt="" coords="141,153,229,179"/>
+<area shape="poly" id="edge6_Node000000_Node000004" title=" " alt="" coords="81,110,133,138,158,151,156,156,131,143,79,115"/>
+</map>

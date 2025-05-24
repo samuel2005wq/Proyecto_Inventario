@@ -1,0 +1,69 @@
+\doxysection{component.\+h}
+\hypertarget{component_8h_source}{}\label{component_8h_source}\mbox{\hyperlink{component_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COMPONENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COMPONENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QDate>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classComponent}{Component}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ nombre,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ tipo,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cantidad,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ ubicacion,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QDate\&\ fechaAdquisicion);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classComponent}{Component}}(\textcolor{keyword}{const}\ QString\&\ nombre\ =\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ tipo\ =\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cantidad\ =\ 0,}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ ubicacion\ =\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QDate\&\ fechaAdquisicion\ =\ QDate());}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//\ =======================}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ Métodos\ Getters}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ =======================}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classComponent_a713fb75efa9096918cde2c68ff50eef4}{getId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ QString\ \mbox{\hyperlink{classComponent_a0d5bb29d3aaa854a2f1c513645d302d5}{getNombre}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ QString\ \mbox{\hyperlink{classComponent_a50ba58579c30424b0d1a11d2c5e2f5da}{getTipo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classComponent_ad16bd3c6e55c618c98a9d9083a1fd762}{getCantidad}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ QString\ \mbox{\hyperlink{classComponent_ab67dd9afedfab66e4de61525c365dd93}{getUbicacion}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ QDate\ \mbox{\hyperlink{classComponent_a511bed10d9130c7f9b83d25ba0f35809}{getFechaAdquisicion}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{comment}{//\ =======================}}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{comment}{//\ Métodos\ Setters}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{comment}{//\ =======================}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_adcba60cb547a56164b4d35c9d2a4278c}{setId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_ab8e81e9d7cd1c92b411943b488023c3f}{setNombre}}(\textcolor{keyword}{const}\ QString\&\ nombre);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_a71f23d65eb403e259923c41f351e8e64}{setTipo}}(\textcolor{keyword}{const}\ QString\&\ tipo);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_a5331d7bacb0fb63682fdcf0820f83c97}{setCantidad}}(\textcolor{keywordtype}{int}\ cantidad);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_a578cf3f7ee67a998e43d6696884cda2f}{setUbicacion}}(\textcolor{keyword}{const}\ QString\&\ ubicacion);}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_aed76ecb132bdabb3606f2a118ed81db5}{setFechaAdquisicion}}(\textcolor{keyword}{const}\ QDate\&\ fechaAdquisicion);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{int}\ id;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00128\ \ \ \ \ QString\ nombre;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00129\ \ \ \ \ QString\ tipo;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{int}\ cantidad;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00131\ \ \ \ \ QString\ ubicacion;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00132\ \ \ \ \ QDate\ fechaAdquisicion;\ \ }
+\DoxyCodeLine{00133\ \};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COMPONENT\_H}}
+
+\end{DoxyCode}

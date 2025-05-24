@@ -1,0 +1,5 @@
+<map id="alertstab.h" name="alertstab.h">
+<area shape="rect" id="Node000001" title="Declaración de la clase AlertsTab que representa la pestaña de alertas de bajo stock." alt="" coords="13,5,105,31"/>
+<area shape="rect" id="Node000002" href="$alertstab_8cpp.html" title="Implementación de la clase AlertsTab que muestra componentes con cantidades bajas." alt="" coords="5,79,112,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,44,61,79,56,79,56,44"/>
+</map>

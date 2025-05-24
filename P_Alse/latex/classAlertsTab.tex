@@ -1,0 +1,93 @@
+\doxysection{Alerts\+Tab Class Reference}
+\hypertarget{classAlertsTab}{}\label{classAlertsTab}\index{AlertsTab@{AlertsTab}}
+
+
+Widget que muestra una tabla con los componentes cuyo stock está por debajo de un umbral predefinido.  
+
+
+
+
+{\ttfamily \#include $<$alertstab.\+h$>$}
+
+
+
+Inheritance diagram for Alerts\+Tab\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classAlertsTab__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alerts\+Tab\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classAlertsTab__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAlertsTab_ab80136f2c4b4b615448e601b5a4bd1c4}{Alerts\+Tab}} (\mbox{\hyperlink{classInventoryManager}{Inventory\+Manager}} \texorpdfstring{$\ast$}{*}manager, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor de la pestaña de alertas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlertsTab_affbc762aa91f520a1427c4199d4300a4}{refresh\+Alerts}} ()
+\begin{DoxyCompactList}\small\item\em Refresca la tabla de alertas mostrando únicamente los componentes con cantidad baja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Widget que muestra una tabla con los componentes cuyo stock está por debajo de un umbral predefinido. 
+
+Esta clase se encarga de visualizar alertas de inventario basadas en la cantidad mínima establecida (por defecto 5 unidades). Muestra nombre, tipo, cantidad, ubicación y fecha de adquisición. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classAlertsTab_ab80136f2c4b4b615448e601b5a4bd1c4}\label{classAlertsTab_ab80136f2c4b4b615448e601b5a4bd1c4} 
+\index{AlertsTab@{AlertsTab}!AlertsTab@{AlertsTab}}
+\index{AlertsTab@{AlertsTab}!AlertsTab@{AlertsTab}}
+\doxysubsubsection{\texorpdfstring{AlertsTab()}{AlertsTab()}}
+{\footnotesize\ttfamily Alerts\+Tab\+::\+Alerts\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classInventoryManager}{Inventory\+Manager}} \texorpdfstring{$\ast$}{*}}]{manager,  }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructor de la pestaña de alertas. 
+
+Constructor de \doxylink{classAlertsTab}{Alerts\+Tab}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & Puntero al \doxylink{classInventoryManager}{Inventory\+Manager} para obtener los datos del inventario. \\
+\hline
+{\em parent} & Widget padre (por defecto nullptr).\\
+\hline
+\end{DoxyParams}
+Crea una tabla y la inicializa con los componentes cuya cantidad está por debajo del umbral.
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & Puntero al \doxylink{classInventoryManager}{Inventory\+Manager} que maneja los componentes. \\
+\hline
+{\em parent} & Widget padre, por defecto nullptr. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAlertsTab_affbc762aa91f520a1427c4199d4300a4}\label{classAlertsTab_affbc762aa91f520a1427c4199d4300a4} 
+\index{AlertsTab@{AlertsTab}!refreshAlerts@{refreshAlerts}}
+\index{refreshAlerts@{refreshAlerts}!AlertsTab@{AlertsTab}}
+\doxysubsubsection{\texorpdfstring{refreshAlerts()}{refreshAlerts()}}
+{\footnotesize\ttfamily void Alerts\+Tab\+::refresh\+Alerts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Refresca la tabla de alertas mostrando únicamente los componentes con cantidad baja. 
+
+Actualiza la tabla con los componentes cuya cantidad es menor o igual al umbral. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{alertstab_8h}{alertstab.\+h}}\item 
+\mbox{\hyperlink{alertstab_8cpp}{alertstab.\+cpp}}\end{DoxyCompactItemize}

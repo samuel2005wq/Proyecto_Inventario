@@ -1,0 +1,19 @@
+<map id="databasemanager.h" name="databasemanager.h">
+<area shape="rect" id="Node000001" title="Declaración de la clase DatabaseManager para gestionar la base de datos del inventario." alt="" coords="105,5,256,31"/>
+<area shape="rect" id="Node000002" href="$databasemanager_8cpp.html" title="Implementación de la clase DatabaseManager encargada de la gestión de base de datos SQLite." alt="" coords="5,79,172,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,41,105,81,102,76,154,37"/>
+<area shape="rect" id="Node000003" href="$inventorymanager_8h_source.html" title=" " alt="" coords="196,79,349,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,37,259,76,256,81,204,41"/>
+<area shape="rect" id="Node000004" href="$alertstab_8h.html" title="Declaración de la clase AlertsTab que representa la pestaña de alertas de bajo stock." alt="" coords="27,152,119,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,111,106,154,104,149,227,106"/>
+<area shape="rect" id="Node000006" href="$inventorytab_8h_source.html" title=" " alt="" coords="143,152,261,177"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="253,116,215,154,212,150,249,112"/>
+<area shape="rect" id="Node000007" href="$mainwindow_8h_source.html" title=" " alt="" coords="285,152,401,177"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="296,112,334,150,330,154,292,116"/>
+<area shape="rect" id="Node000008" href="$searchtab_8h.html" title="Declaración de la clase SearchTab que representa una pestaña de búsqueda de componentes en el inventa..." alt="" coords="426,152,525,177"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="319,106,443,149,442,154,317,111"/>
+<area shape="rect" id="Node000005" href="$alertstab_8cpp.html" title="Implementación de la clase AlertsTab que muestra componentes con cantidades bajas." alt="" coords="19,225,126,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="75,191,75,225,70,225,70,191"/>
+<area shape="rect" id="Node000009" href="$searchtab_8cpp.html" title="Implementación de la clase SearchTab que proporciona una pestaña de búsqueda para componentes en el i..." alt="" coords="419,225,532,251"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="478,191,478,225,473,225,473,191"/>
+</map>

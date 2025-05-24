@@ -1,0 +1,37 @@
+\doxysection{inventorymanager.\+h}
+\hypertarget{inventorymanager_8h_source}{}\label{inventorymanager_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INVENTORYMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INVENTORYMANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{component_8h}{component.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{databasemanager_8h}{databasemanager.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInventoryManager}{InventoryManager}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classInventoryManager_ad962e4282b5a2c6521f1268ac018bd50}{InventoryManager}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classInventoryManager_a512a0bfc118080463aabc42267b28036}{\string~InventoryManager}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInventoryManager_a3b0d7c97e6d7c2aa2f0e1b561e3db52f}{addComponent}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classComponent}{Component}}\&\ comp);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ QList<Component>\ \mbox{\hyperlink{classInventoryManager_a1dacbc35b598e0f79b1eabde0eaff9a4}{getAllComponents}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00051\ \ \ \ \ QList<Component>\ \mbox{\hyperlink{classInventoryManager_af9488f7d8202ed64d6bb0d92785114af}{searchComponents}}(\textcolor{keyword}{const}\ QString\&\ keyword,\ \textcolor{keyword}{const}\ QString\&\ criteria);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInventoryManager_acd51509dac46f8902c27a9e8fffb5fb6}{updateComponent}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classComponent}{Component}}\&\ comp);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInventoryManager_a9df15a774e51300f68471b73c52f5056}{deleteComponent}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{classDatabaseManager}{DatabaseManager}}*\ \mbox{\hyperlink{classInventoryManager_abcb10713cfad9ac50288f464ad4924f3}{getDatabaseManager}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{classDatabaseManager}{DatabaseManager}}*\ m\_dbManager;\ }
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ INVENTORYMANAGER\_H}}
+
+\end{DoxyCode}

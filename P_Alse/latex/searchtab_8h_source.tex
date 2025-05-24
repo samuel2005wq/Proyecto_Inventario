@@ -1,0 +1,34 @@
+\doxysection{searchtab.\+h}
+\hypertarget{searchtab_8h_source}{}\label{searchtab_8h_source}\mbox{\hyperlink{searchtab_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SEARCHTAB\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SEARCHTAB\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QTableWidget>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QComboBox>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}inventorymanager.h"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSearchTab}{SearchTab}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classSearchTab}{SearchTab}}(\mbox{\hyperlink{classInventoryManager}{InventoryManager}}*\ manager,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ performSearch();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{classInventoryManager}{InventoryManager}}*\ m\_manager;\ \ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ QLineEdit*\ searchEdit;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ QPushButton*\ searchButton;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ QTableWidget*\ resultTable;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ QComboBox*\ searchCriteriaCombo;\ \ \ }
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SEARCHTAB\_H}}
+
+\end{DoxyCode}

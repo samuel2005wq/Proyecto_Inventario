@@ -1,0 +1,44 @@
+<map id="searchtab.cpp" name="searchtab.cpp">
+<area shape="rect" id="Node000001" title="Implementación de la clase SearchTab que proporciona una pestaña de búsqueda para componentes en el i..." alt="" coords="544,5,657,31"/>
+<area shape="rect" id="Node000002" href="$searchtab_8h.html" title="Declaración de la clase SearchTab que representa una pestaña de búsqueda de componentes en el inventa..." alt="" coords="287,79,386,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,33,393,78,392,72,558,28"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="411,79,521,104"/>
+<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="580,33,501,74,499,70,578,28"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="545,79,656,104"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="603,31,603,65,598,65,598,31"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="680,79,823,104"/>
+<area shape="poly" id="edge22_Node000001_Node000018" title=" " alt="" coords="626,28,715,70,713,75,624,33"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="847,79,914,104"/>
+<area shape="poly" id="edge23_Node000001_Node000019" title=" " alt="" coords="646,28,835,76,833,81,645,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,84,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,107,98,153,97,148,289,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="108,152,192,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="308,107,194,149,192,145,306,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="217,152,323,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="328,106,292,144,288,140,324,103"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="347,152,459,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="350,103,385,140,381,144,346,106"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="484,152,587,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="369,102,491,145,489,150,368,107"/>
+<area shape="rect" id="Node000008" href="$inventorymanager_8h_source.html" title=" " alt="" coords="611,152,764,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="387,100,618,147,617,152,386,105"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="601,299,656,324"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="683,179,659,226,638,286,633,284,654,224,678,176"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="659,372,729,397"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="672,179,640,205,606,241,593,261,585,282,584,302,591,323,602,337,615,349,647,366,644,371,612,353,598,340,586,325,579,303,580,281,588,259,602,238,636,201,669,175"/>
+<area shape="rect" id="Node000011" href="$component_8h.html" title="Declaración de la clase Component que representa un ítem del inventario." alt="" coords="1035,299,1142,324"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="720,175,1045,291,1043,297,718,180"/>
+<area shape="rect" id="Node000013" href="$databasemanager_8h.html" title="Declaración de la clase DatabaseManager para gestionar la base de datos del inventario." alt="" coords="669,225,820,251"/>
+<area shape="poly" id="edge13_Node000008_Node000013" title=" " alt="" coords="699,176,729,213,725,216,695,179"/>
+<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="1035,325,743,377,742,372,1035,320"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="905,372,968,397"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1065,326,975,369,973,364,1063,322"/>
+<area shape="poly" id="edge16_Node000013_Node000009" title=" " alt="" coords="727,253,661,294,658,289,725,248"/>
+<area shape="poly" id="edge14_Node000013_Node000010" title=" " alt="" coords="743,252,705,360,700,358,738,250"/>
+<area shape="poly" id="edge19_Node000013_Node000011" title=" " alt="" coords="800,248,1022,294,1021,299,799,253"/>
+<area shape="poly" id="edge17_Node000013_Node000012" title=" " alt="" coords="748,250,753,286,760,305,772,322,799,344,830,359,892,376,891,381,828,364,796,348,768,326,756,308,748,287,742,251"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="897,299,1011,324"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="779,248,908,292,906,297,777,253"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="782,299,873,324"/>
+<area shape="poly" id="edge18_Node000013_Node000015" title=" " alt="" coords="760,249,805,287,802,292,756,253"/>
+</map>

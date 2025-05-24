@@ -1,0 +1,126 @@
+\doxysection{Report\+Generator Class Reference}
+\hypertarget{classReportGenerator}{}\label{classReportGenerator}\index{ReportGenerator@{ReportGenerator}}
+
+
+Clase encargada de generar reportes en formato PDF y CSV a partir de los datos de inventario almacenados en la base de datos.  
+
+
+
+
+{\ttfamily \#include $<$reportgenerator.\+h$>$}
+
+
+
+Inheritance diagram for Report\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classReportGenerator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Report\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classReportGenerator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReportGenerator_ac01d911d88f1d23643cc1369bcf4b7fe}{Report\+Generator}} (\mbox{\hyperlink{classDatabaseManager}{Database\+Manager}} \texorpdfstring{$\ast$}{*}db\+Manager, QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor de \doxylink{classReportGenerator}{Report\+Generator}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReportGenerator_ac244d639a729cab2dfb7c98bcb41bcf9}{generate\+PDF}} (const QString \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Genera un archivo PDF con todos los componentes del inventario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReportGenerator_a89a1c003f9d0b5a4faf67c028d2904a1}{generate\+CSV}} (const QString \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Genera un archivo CSV con todos los componentes del inventario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada de generar reportes en formato PDF y CSV a partir de los datos de inventario almacenados en la base de datos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classReportGenerator_ac01d911d88f1d23643cc1369bcf4b7fe}\label{classReportGenerator_ac01d911d88f1d23643cc1369bcf4b7fe} 
+\index{ReportGenerator@{ReportGenerator}!ReportGenerator@{ReportGenerator}}
+\index{ReportGenerator@{ReportGenerator}!ReportGenerator@{ReportGenerator}}
+\doxysubsubsection{\texorpdfstring{ReportGenerator()}{ReportGenerator()}}
+{\footnotesize\ttfamily Report\+Generator\+::\+Report\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDatabaseManager}{Database\+Manager}} \texorpdfstring{$\ast$}{*}}]{db\+Manager,  }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor de \doxylink{classReportGenerator}{Report\+Generator}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Manager} & Puntero a una instancia de \doxylink{classDatabaseManager}{Database\+Manager} para acceder a los datos. \\
+\hline
+{\em parent} & Objeto padre (opcional).\\
+\hline
+{\em db\+Manager} & Puntero a la instancia de \doxylink{classDatabaseManager}{Database\+Manager} usada para consultar datos. \\
+\hline
+{\em parent} & Objeto padre (por defecto nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classReportGenerator_a89a1c003f9d0b5a4faf67c028d2904a1}\label{classReportGenerator_a89a1c003f9d0b5a4faf67c028d2904a1} 
+\index{ReportGenerator@{ReportGenerator}!generateCSV@{generateCSV}}
+\index{generateCSV@{generateCSV}!ReportGenerator@{ReportGenerator}}
+\doxysubsubsection{\texorpdfstring{generateCSV()}{generateCSV()}}
+{\footnotesize\ttfamily void Report\+Generator\+::generate\+CSV (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Genera un archivo CSV con todos los componentes del inventario. 
+
+El archivo contiene los datos en formato separado por comas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Ruta completa del archivo CSV a generar.\\
+\hline
+\end{DoxyParams}
+Exporta los datos obtenidos de la base de datos a un archivo de texto con formato CSV.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Ruta del archivo CSV de salida. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classReportGenerator_ac244d639a729cab2dfb7c98bcb41bcf9}\label{classReportGenerator_ac244d639a729cab2dfb7c98bcb41bcf9} 
+\index{ReportGenerator@{ReportGenerator}!generatePDF@{generatePDF}}
+\index{generatePDF@{generatePDF}!ReportGenerator@{ReportGenerator}}
+\doxysubsubsection{\texorpdfstring{generatePDF()}{generatePDF()}}
+{\footnotesize\ttfamily void Report\+Generator\+::generate\+PDF (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Genera un archivo PDF con todos los componentes del inventario. 
+
+Genera un reporte PDF de todos los componentes del inventario.
+
+El archivo contiene una tabla HTML con la información estructurada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Ruta completa del archivo PDF a generar.\\
+\hline
+\end{DoxyParams}
+Consulta la base de datos y construye una tabla HTML con todos los datos, que luego se imprime como archivo PDF.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Ruta del archivo PDF de salida. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+reportgenerator.\+h\item 
+reportgenerator.\+cpp\end{DoxyCompactItemize}

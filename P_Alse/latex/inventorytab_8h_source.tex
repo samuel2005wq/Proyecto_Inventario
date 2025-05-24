@@ -1,0 +1,47 @@
+\doxysection{inventorytab.\+h}
+\hypertarget{inventorytab_8h_source}{}\label{inventorytab_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INVENTORYTAB\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INVENTORYTAB\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTableWidget>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QSpinBox>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QDateEdit>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QMap>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}inventorymanager.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInventoryTab}{InventoryTab}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classInventoryTab}{InventoryTab}}(\mbox{\hyperlink{classInventoryManager}{InventoryManager}}*\ manager,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ refreshTable();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ addOrUpdateComponent();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ handleCellDoubleClicked(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteSelectedComponent();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{classInventoryManager}{InventoryManager}}*\ m\_manager;\ }
+\DoxyCodeLine{00058\ \ \ \ \ QTableWidget*\ table;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ QLineEdit*\ nameEdit;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ QLineEdit*\ typeEdit;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ QSpinBox*\ quantitySpin;\ \ \ \ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ QLineEdit*\ locationEdit;\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ QDateEdit*\ dateEdit;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ QPushButton*\ addButton;\ \ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ QPushButton*\ deleteButton;\ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ QMap<int,\ int>\ rowToIdMap;\ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ editingId\ =\ -\/1;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ INVENTORYTAB\_H}}
+
+\end{DoxyCode}

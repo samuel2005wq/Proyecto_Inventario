@@ -1,0 +1,214 @@
+\doxysection{Inventory\+Manager Class Reference}
+\hypertarget{classInventoryManager}{}\label{classInventoryManager}\index{InventoryManager@{InventoryManager}}
+
+
+Clase que maneja la lógica de inventario utilizando una base de datos.  
+
+
+
+
+{\ttfamily \#include $<$inventorymanager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classInventoryManager_ad962e4282b5a2c6521f1268ac018bd50}\label{classInventoryManager_ad962e4282b5a2c6521f1268ac018bd50} 
+{\bfseries Inventory\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Constructor de \doxylink{classInventoryManager}{Inventory\+Manager}. Inicializa la base de datos y prepara el entorno para gestionar el inventario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInventoryManager_a512a0bfc118080463aabc42267b28036}{\texorpdfstring{$\sim$}{\string~}\+Inventory\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de \doxylink{classInventoryManager}{Inventory\+Manager}. Cierra la base de datos y libera los recursos utilizados. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInventoryManager_a3b0d7c97e6d7c2aa2f0e1b561e3db52f}{add\+Component}} (const \mbox{\hyperlink{classComponent}{Component}} \&comp)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo componente al inventario. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{classComponent}{Component}} $>$ \mbox{\hyperlink{classInventoryManager_a1dacbc35b598e0f79b1eabde0eaff9a4}{get\+All\+Components}} ()
+\begin{DoxyCompactList}\small\item\em Recupera todos los componentes almacenados en el inventario. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{classComponent}{Component}} $>$ \mbox{\hyperlink{classInventoryManager_af9488f7d8202ed64d6bb0d92785114af}{search\+Components}} (const QString \&keyword, const QString \&criteria)
+\begin{DoxyCompactList}\small\item\em Busca componentes en el inventario según un criterio y palabra clave. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInventoryManager_acd51509dac46f8902c27a9e8fffb5fb6}{update\+Component}} (int id, const \mbox{\hyperlink{classComponent}{Component}} \&comp)
+\begin{DoxyCompactList}\small\item\em Actualiza un componente existente en el inventario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInventoryManager_a9df15a774e51300f68471b73c52f5056}{delete\+Component}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un componente del inventario por su ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDatabaseManager}{Database\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInventoryManager_abcb10713cfad9ac50288f464ad4924f3}{get\+Database\+Manager}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve un puntero al administrador de base de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que maneja la lógica de inventario utilizando una base de datos. 
+
+Clase que gestiona la lógica del inventario, interfaciando con \doxylink{classDatabaseManager}{Database\+Manager}.
+
+Esta clase proporciona funciones para agregar, consultar, buscar, actualizar y eliminar componentes en un inventario. Internamente utiliza una instancia de \doxylink{classDatabaseManager}{Database\+Manager} para manejar operaciones relacionadas con la base de datos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classInventoryManager_a512a0bfc118080463aabc42267b28036}\label{classInventoryManager_a512a0bfc118080463aabc42267b28036} 
+\index{InventoryManager@{InventoryManager}!````~InventoryManager@{\texorpdfstring{$\sim$}{\string~}InventoryManager}}
+\index{````~InventoryManager@{\texorpdfstring{$\sim$}{\string~}InventoryManager}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}InventoryManager()}{\string~InventoryManager()}}
+{\footnotesize\ttfamily Inventory\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Inventory\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor de \doxylink{classInventoryManager}{Inventory\+Manager}. Cierra la base de datos y libera los recursos utilizados. 
+
+Destructor de \doxylink{classInventoryManager}{Inventory\+Manager}. Cierra la base de datos y libera memoria. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classInventoryManager_a3b0d7c97e6d7c2aa2f0e1b561e3db52f}\label{classInventoryManager_a3b0d7c97e6d7c2aa2f0e1b561e3db52f} 
+\index{InventoryManager@{InventoryManager}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily bool Inventory\+Manager\+::add\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComponent}{Component}} \&}]{comp }\end{DoxyParamCaption})}
+
+
+
+Agrega un nuevo componente al inventario. 
+
+Agrega un componente a la base de datos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & El componente a agregar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se agrega correctamente, false si ocurre un error.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & El componente a agregar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se agregó correctamente, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classInventoryManager_a9df15a774e51300f68471b73c52f5056}\label{classInventoryManager_a9df15a774e51300f68471b73c52f5056} 
+\index{InventoryManager@{InventoryManager}!deleteComponent@{deleteComponent}}
+\index{deleteComponent@{deleteComponent}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{deleteComponent()}{deleteComponent()}}
+{\footnotesize\ttfamily bool Inventory\+Manager\+::delete\+Component (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Elimina un componente del inventario por su ID. 
+
+Elimina un componente de la base de datos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID del componente a eliminar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se elimina correctamente, false en caso contrario.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & El ID del componente a eliminar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se eliminó correctamente, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classInventoryManager_a1dacbc35b598e0f79b1eabde0eaff9a4}\label{classInventoryManager_a1dacbc35b598e0f79b1eabde0eaff9a4} 
+\index{InventoryManager@{InventoryManager}!getAllComponents@{getAllComponents}}
+\index{getAllComponents@{getAllComponents}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{getAllComponents()}{getAllComponents()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{classComponent}{Component}} $>$ Inventory\+Manager\+::get\+All\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Recupera todos los componentes almacenados en el inventario. 
+
+Recupera todos los componentes del inventario.
+
+\begin{DoxyReturn}{Returns}
+Lista de todos los componentes.
+
+Una lista de todos los componentes. 
+\end{DoxyReturn}
+\Hypertarget{classInventoryManager_abcb10713cfad9ac50288f464ad4924f3}\label{classInventoryManager_abcb10713cfad9ac50288f464ad4924f3} 
+\index{InventoryManager@{InventoryManager}!getDatabaseManager@{getDatabaseManager}}
+\index{getDatabaseManager@{getDatabaseManager}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{getDatabaseManager()}{getDatabaseManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDatabaseManager}{Database\+Manager}} \texorpdfstring{$\ast$}{*} Inventory\+Manager\+::get\+Database\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve un puntero al administrador de base de datos. 
+
+Obtiene un puntero al administrador de base de datos.
+
+\begin{DoxyReturn}{Returns}
+Puntero a \doxylink{classDatabaseManager}{Database\+Manager}, útil para otras clases como \doxylink{classReportGenerator}{Report\+Generator}.
+
+Puntero a la instancia de \doxylink{classDatabaseManager}{Database\+Manager} utilizada. 
+\end{DoxyReturn}
+\Hypertarget{classInventoryManager_af9488f7d8202ed64d6bb0d92785114af}\label{classInventoryManager_af9488f7d8202ed64d6bb0d92785114af} 
+\index{InventoryManager@{InventoryManager}!searchComponents@{searchComponents}}
+\index{searchComponents@{searchComponents}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{searchComponents()}{searchComponents()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{classComponent}{Component}} $>$ Inventory\+Manager\+::search\+Components (\begin{DoxyParamCaption}\item[{const QString \&}]{keyword,  }\item[{const QString \&}]{criteria }\end{DoxyParamCaption})}
+
+
+
+Busca componentes en el inventario según un criterio y palabra clave. 
+
+Busca componentes en base a una palabra clave y un criterio.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyword} & Palabra clave a buscar. \\
+\hline
+{\em criteria} & Criterio de búsqueda (Nombre, Tipo, Cantidad, Ubicación, Fecha). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de componentes que coinciden con la búsqueda.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em keyword} & La palabra clave para buscar. \\
+\hline
+{\em criteria} & El criterio por el cual se va a buscar (Nombre, Tipo, Cantidad, Ubicación, Fecha). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una lista de componentes que coinciden con la búsqueda. 
+\end{DoxyReturn}
+\Hypertarget{classInventoryManager_acd51509dac46f8902c27a9e8fffb5fb6}\label{classInventoryManager_acd51509dac46f8902c27a9e8fffb5fb6} 
+\index{InventoryManager@{InventoryManager}!updateComponent@{updateComponent}}
+\index{updateComponent@{updateComponent}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{updateComponent()}{updateComponent()}}
+{\footnotesize\ttfamily bool Inventory\+Manager\+::update\+Component (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{const \mbox{\hyperlink{classComponent}{Component}} \&}]{comp }\end{DoxyParamCaption})}
+
+
+
+Actualiza un componente existente en el inventario. 
+
+Actualiza un componente existente en la base de datos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID del componente a actualizar. \\
+\hline
+{\em comp} & El componente actualizado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la operación fue exitosa, false si falla.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & El ID del componente a actualizar. \\
+\hline
+{\em comp} & El componente con los nuevos datos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se actualizó correctamente, false en caso contrario. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inventorymanager.\+h\item 
+inventorymanager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+<map id="alertstab.cpp" name="alertstab.cpp">
+<area shape="rect" id="Node000001" title="Implementación de la clase AlertsTab que muestra componentes con cantidades bajas." alt="" coords="237,5,343,31"/>
+<area shape="rect" id="Node000002" href="$alertstab_8h.html" title="Declaración de la clase AlertsTab que representa la pestaña de alertas de bajo stock." alt="" coords="119,79,211,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,33,198,74,196,69,269,28"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="235,79,345,104"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="293,31,293,65,287,65,287,31"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="369,79,512,104"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="315,28,405,70,402,75,313,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,84,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,106,78,147,75,142,144,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="109,152,221,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="167,104,167,138,162,138,162,104"/>
+<area shape="rect" id="Node000005" href="$inventorymanager_8h_source.html" title=" " alt="" coords="244,152,397,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="191,102,284,144,282,149,189,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="235,299,289,324"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="316,179,292,226,272,286,267,284,288,224,312,176"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="292,372,363,397"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="306,179,273,205,239,241,226,261,219,282,217,302,224,323,235,337,249,349,280,366,277,371,245,353,231,340,220,325,212,303,213,281,222,259,235,238,270,201,302,175"/>
+<area shape="rect" id="Node000008" href="$component_8h.html" title="Declaración de la clase Component que representa un ítem del inventario." alt="" coords="669,299,775,324"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="353,175,678,291,676,297,352,180"/>
+<area shape="rect" id="Node000010" href="$databasemanager_8h.html" title="Declaración de la clase DatabaseManager para gestionar la base de datos del inventario." alt="" coords="303,225,453,251"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="332,176,362,213,358,216,328,179"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="669,325,377,377,376,372,668,320"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="539,372,601,397"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="699,326,608,369,606,364,696,322"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="361,253,294,294,291,289,358,248"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="376,252,338,360,333,358,371,250"/>
+<area shape="poly" id="edge16_Node000010_Node000008" title=" " alt="" coords="434,248,656,294,655,299,433,253"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="381,250,386,286,394,305,405,322,432,344,463,359,526,376,524,381,461,364,429,348,401,326,389,308,381,287,376,251"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="530,299,645,324"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="412,248,541,292,539,297,411,253"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="415,299,506,324"/>
+<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="393,249,438,287,435,292,390,253"/>
+</map>

@@ -1,0 +1,313 @@
+\doxysection{Component Class Reference}
+\hypertarget{classComponent}{}\label{classComponent}\index{Component@{Component}}
+
+
+Representa un componente individual dentro del inventario, con atributos como nombre, tipo, cantidad, ubicación y fecha de adquisición.  
+
+
+
+
+{\ttfamily \#include $<$component.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_af12fd6ffaf5195863cd7804126490f40}{Component}} (int id, const QString \&nombre, const QString \&tipo, int cantidad, const QString \&ubicacion, const QDate \&fecha\+Adquisicion)
+\begin{DoxyCompactList}\small\item\em Constructor con ID (usado para componentes ya almacenados en la base de datos). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComponent_ac3840e9a381e2745793784c753c997c1}{Component}} (const QString \&nombre="{}"{}, const QString \&tipo="{}"{}, int cantidad=0, const QString \&ubicacion="{}"{}, const QDate \&fecha\+Adquisicion=QDate())
+\begin{DoxyCompactList}\small\item\em Constructor sin ID (usado para componentes nuevos que aún no han sido insertados en la base de datos). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComponent_a713fb75efa9096918cde2c68ff50eef4}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del componente. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classComponent_a0d5bb29d3aaa854a2f1c513645d302d5}{get\+Nombre}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del componente. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classComponent_a50ba58579c30424b0d1a11d2c5e2f5da}{get\+Tipo}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el tipo del componente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComponent_ad16bd3c6e55c618c98a9d9083a1fd762}{get\+Cantidad}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la cantidad disponible. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classComponent_ab67dd9afedfab66e4de61525c365dd93}{get\+Ubicacion}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la ubicación física del componente. \end{DoxyCompactList}\item 
+QDate \mbox{\hyperlink{classComponent_a511bed10d9130c7f9b83d25ba0f35809}{get\+Fecha\+Adquisicion}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la fecha de adquisición. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComponent_adcba60cb547a56164b4d35c9d2a4278c}{set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Establece el ID del componente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComponent_ab8e81e9d7cd1c92b411943b488023c3f}{set\+Nombre}} (const QString \&nombre)
+\begin{DoxyCompactList}\small\item\em Establece el nombre del componente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComponent_a71f23d65eb403e259923c41f351e8e64}{set\+Tipo}} (const QString \&tipo)
+\begin{DoxyCompactList}\small\item\em Establece el tipo del componente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComponent_a5331d7bacb0fb63682fdcf0820f83c97}{set\+Cantidad}} (int cantidad)
+\begin{DoxyCompactList}\small\item\em Establece la cantidad disponible. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComponent_a578cf3f7ee67a998e43d6696884cda2f}{set\+Ubicacion}} (const QString \&ubicacion)
+\begin{DoxyCompactList}\small\item\em Establece la ubicación física. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComponent_aed76ecb132bdabb3606f2a118ed81db5}{set\+Fecha\+Adquisicion}} (const QDate \&fecha\+Adquisicion)
+\begin{DoxyCompactList}\small\item\em Establece la fecha de adquisición. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un componente individual dentro del inventario, con atributos como nombre, tipo, cantidad, ubicación y fecha de adquisición. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classComponent_af12fd6ffaf5195863cd7804126490f40}\label{classComponent_af12fd6ffaf5195863cd7804126490f40} 
+\index{Component@{Component}!Component@{Component}}
+\index{Component@{Component}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Component()}{Component()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Component\+::\+Component (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{const QString \&}]{nombre,  }\item[{const QString \&}]{tipo,  }\item[{int}]{cantidad,  }\item[{const QString \&}]{ubicacion,  }\item[{const QDate \&}]{fecha\+Adquisicion }\end{DoxyParamCaption})}
+
+
+
+Constructor con ID (usado para componentes ya almacenados en la base de datos). 
+
+Constructor de la clase \doxylink{classComponent}{Component} con ID explícito.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único del componente. \\
+\hline
+{\em nombre} & Nombre del componente. \\
+\hline
+{\em tipo} & Tipo o categoría del componente. \\
+\hline
+{\em cantidad} & Cantidad disponible. \\
+\hline
+{\em ubicacion} & Ubicación física en el inventario. \\
+\hline
+{\em fecha\+Adquisicion} & Fecha de adquisición del componente.\\
+\hline
+{\em id} & Identificador único del componente. \\
+\hline
+{\em nombre} & Nombre del componente. \\
+\hline
+{\em tipo} & Tipo o categoría del componente. \\
+\hline
+{\em cantidad} & Cantidad disponible del componente. \\
+\hline
+{\em ubicacion} & Ubicación física del componente. \\
+\hline
+{\em fecha\+Adquisicion} & Fecha en que el componente fue adquirido. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classComponent_ac3840e9a381e2745793784c753c997c1}\label{classComponent_ac3840e9a381e2745793784c753c997c1} 
+\index{Component@{Component}!Component@{Component}}
+\index{Component@{Component}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Component()}{Component()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Component\+::\+Component (\begin{DoxyParamCaption}\item[{const QString \&}]{nombre = {\ttfamily "{}"{}},  }\item[{const QString \&}]{tipo = {\ttfamily "{}"{}},  }\item[{int}]{cantidad = {\ttfamily 0},  }\item[{const QString \&}]{ubicacion = {\ttfamily "{}"{}},  }\item[{const QDate \&}]{fecha\+Adquisicion = {\ttfamily QDate()} }\end{DoxyParamCaption})}
+
+
+
+Constructor sin ID (usado para componentes nuevos que aún no han sido insertados en la base de datos). 
+
+Constructor de la clase \doxylink{classComponent}{Component} sin ID (usado para inserciones nuevas).
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Nombre del componente. \\
+\hline
+{\em tipo} & Tipo o categoría del componente. \\
+\hline
+{\em cantidad} & Cantidad disponible. \\
+\hline
+{\em ubicacion} & Ubicación física en el inventario. \\
+\hline
+{\em fecha\+Adquisicion} & Fecha de adquisición del componente.\\
+\hline
+{\em nombre} & Nombre del componente. \\
+\hline
+{\em tipo} & Tipo o categoría del componente. \\
+\hline
+{\em cantidad} & Cantidad disponible del componente. \\
+\hline
+{\em ubicacion} & Ubicación física del componente. \\
+\hline
+{\em fecha\+Adquisicion} & Fecha en que el componente fue adquirido. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classComponent_ad16bd3c6e55c618c98a9d9083a1fd762}\label{classComponent_ad16bd3c6e55c618c98a9d9083a1fd762} 
+\index{Component@{Component}!getCantidad@{getCantidad}}
+\index{getCantidad@{getCantidad}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getCantidad()}{getCantidad()}}
+{\footnotesize\ttfamily int Component\+::get\+Cantidad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene la cantidad disponible. 
+
+Obtiene la cantidad disponible del componente.
+
+\begin{DoxyReturn}{Returns}
+Cantidad como entero. 
+\end{DoxyReturn}
+\Hypertarget{classComponent_a511bed10d9130c7f9b83d25ba0f35809}\label{classComponent_a511bed10d9130c7f9b83d25ba0f35809} 
+\index{Component@{Component}!getFechaAdquisicion@{getFechaAdquisicion}}
+\index{getFechaAdquisicion@{getFechaAdquisicion}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getFechaAdquisicion()}{getFechaAdquisicion()}}
+{\footnotesize\ttfamily QDate Component\+::get\+Fecha\+Adquisicion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene la fecha de adquisición. 
+
+Obtiene la fecha de adquisición del componente.
+
+\begin{DoxyReturn}{Returns}
+Fecha como QDate. 
+\end{DoxyReturn}
+\Hypertarget{classComponent_a713fb75efa9096918cde2c68ff50eef4}\label{classComponent_a713fb75efa9096918cde2c68ff50eef4} 
+\index{Component@{Component}!getId@{getId}}
+\index{getId@{getId}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Component\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el ID del componente. 
+
+\begin{DoxyReturn}{Returns}
+ID entero.
+
+ID numérico. 
+\end{DoxyReturn}
+\Hypertarget{classComponent_a0d5bb29d3aaa854a2f1c513645d302d5}\label{classComponent_a0d5bb29d3aaa854a2f1c513645d302d5} 
+\index{Component@{Component}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily QString Component\+::get\+Nombre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el nombre del componente. 
+
+\begin{DoxyReturn}{Returns}
+Nombre como QString. 
+\end{DoxyReturn}
+\Hypertarget{classComponent_a50ba58579c30424b0d1a11d2c5e2f5da}\label{classComponent_a50ba58579c30424b0d1a11d2c5e2f5da} 
+\index{Component@{Component}!getTipo@{getTipo}}
+\index{getTipo@{getTipo}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getTipo()}{getTipo()}}
+{\footnotesize\ttfamily QString Component\+::get\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el tipo del componente. 
+
+\begin{DoxyReturn}{Returns}
+Tipo como QString. 
+\end{DoxyReturn}
+\Hypertarget{classComponent_ab67dd9afedfab66e4de61525c365dd93}\label{classComponent_ab67dd9afedfab66e4de61525c365dd93} 
+\index{Component@{Component}!getUbicacion@{getUbicacion}}
+\index{getUbicacion@{getUbicacion}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getUbicacion()}{getUbicacion()}}
+{\footnotesize\ttfamily QString Component\+::get\+Ubicacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene la ubicación física del componente. 
+
+Obtiene la ubicación del componente.
+
+\begin{DoxyReturn}{Returns}
+Ubicación como QString. 
+\end{DoxyReturn}
+\Hypertarget{classComponent_a5331d7bacb0fb63682fdcf0820f83c97}\label{classComponent_a5331d7bacb0fb63682fdcf0820f83c97} 
+\index{Component@{Component}!setCantidad@{setCantidad}}
+\index{setCantidad@{setCantidad}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setCantidad()}{setCantidad()}}
+{\footnotesize\ttfamily void Component\+::set\+Cantidad (\begin{DoxyParamCaption}\item[{int}]{cantidad }\end{DoxyParamCaption})}
+
+
+
+Establece la cantidad disponible. 
+
+Establece la cantidad disponible del componente.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Nueva cantidad. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classComponent_aed76ecb132bdabb3606f2a118ed81db5}\label{classComponent_aed76ecb132bdabb3606f2a118ed81db5} 
+\index{Component@{Component}!setFechaAdquisicion@{setFechaAdquisicion}}
+\index{setFechaAdquisicion@{setFechaAdquisicion}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setFechaAdquisicion()}{setFechaAdquisicion()}}
+{\footnotesize\ttfamily void Component\+::set\+Fecha\+Adquisicion (\begin{DoxyParamCaption}\item[{const QDate \&}]{fecha\+Adquisicion }\end{DoxyParamCaption})}
+
+
+
+Establece la fecha de adquisición. 
+
+Establece la fecha de adquisición del componente.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fecha\+Adquisicion} & Nueva fecha. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classComponent_adcba60cb547a56164b4d35c9d2a4278c}\label{classComponent_adcba60cb547a56164b4d35c9d2a4278c} 
+\index{Component@{Component}!setId@{setId}}
+\index{setId@{setId}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Component\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Establece el ID del componente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Nuevo ID. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classComponent_ab8e81e9d7cd1c92b411943b488023c3f}\label{classComponent_ab8e81e9d7cd1c92b411943b488023c3f} 
+\index{Component@{Component}!setNombre@{setNombre}}
+\index{setNombre@{setNombre}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setNombre()}{setNombre()}}
+{\footnotesize\ttfamily void Component\+::set\+Nombre (\begin{DoxyParamCaption}\item[{const QString \&}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Establece el nombre del componente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Nuevo nombre. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classComponent_a71f23d65eb403e259923c41f351e8e64}\label{classComponent_a71f23d65eb403e259923c41f351e8e64} 
+\index{Component@{Component}!setTipo@{setTipo}}
+\index{setTipo@{setTipo}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setTipo()}{setTipo()}}
+{\footnotesize\ttfamily void Component\+::set\+Tipo (\begin{DoxyParamCaption}\item[{const QString \&}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Establece el tipo del componente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tipo} & Nuevo tipo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classComponent_a578cf3f7ee67a998e43d6696884cda2f}\label{classComponent_a578cf3f7ee67a998e43d6696884cda2f} 
+\index{Component@{Component}!setUbicacion@{setUbicacion}}
+\index{setUbicacion@{setUbicacion}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setUbicacion()}{setUbicacion()}}
+{\footnotesize\ttfamily void Component\+::set\+Ubicacion (\begin{DoxyParamCaption}\item[{const QString \&}]{ubicacion }\end{DoxyParamCaption})}
+
+
+
+Establece la ubicación física. 
+
+Establece la ubicación del componente.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ubicacion} & Nueva ubicación. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{component_8h}{component.\+h}}\item 
+\mbox{\hyperlink{component_8cpp}{component.\+cpp}}\end{DoxyCompactItemize}

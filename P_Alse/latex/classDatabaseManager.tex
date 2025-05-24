@@ -1,0 +1,244 @@
+\doxysection{Database\+Manager Class Reference}
+\hypertarget{classDatabaseManager}{}\label{classDatabaseManager}\index{DatabaseManager@{DatabaseManager}}
+
+
+Clase encargada de manejar la conexión con una base de datos SQLite y realizar operaciones CRUD sobre objetos de tipo \doxylink{classComponent}{Component}.  
+
+
+
+
+{\ttfamily \#include $<$databasemanager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDatabaseManager_aea79493087049fbd0e94217ebc31a50e}{Database\+Manager}} (const QString \&path)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDatabaseManager_ae9b3a5da1e04fbb00faf8a034da1d063}{\texorpdfstring{$\sim$}{\string~}\+Database\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. Cierra la base de datos si está abierta. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDatabaseManager_abf0518515ed9ec59c91bd4d3a39f7319}{open\+Database}} ()
+\begin{DoxyCompactList}\small\item\em Abre la base de datos y crea la tabla si no existe. \end{DoxyCompactList}\item 
+\Hypertarget{classDatabaseManager_ad95de729a1eba5e3dd35a8df0fb87f37}\label{classDatabaseManager_ad95de729a1eba5e3dd35a8df0fb87f37} 
+void {\bfseries close\+Database} ()
+\begin{DoxyCompactList}\small\item\em Cierra la base de datos si está abierta. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDatabaseManager_ae605d0352700638f1c41327c4ff9a032}{add\+Component}} (const \mbox{\hyperlink{classComponent}{Component}} \&comp)
+\begin{DoxyCompactList}\small\item\em Inserta un nuevo componente en la base de datos. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{classComponent}{Component}} $>$ \mbox{\hyperlink{classDatabaseManager_a21886f1700053d9d8142707fa8875ad2}{get\+All\+Components}} ()
+\begin{DoxyCompactList}\small\item\em Recupera todos los componentes almacenados. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{classComponent}{Component}} $>$ \mbox{\hyperlink{classDatabaseManager_abd727d0648910b810072a1d119b3d91b}{search\+Components}} (const QString \&keyword)
+\begin{DoxyCompactList}\small\item\em Busca componentes según palabra clave (en nombre, tipo o ubicación). \end{DoxyCompactList}\item 
+QSql\+Query \mbox{\hyperlink{classDatabaseManager_a103a3becac6af79bcc1bed7c7ee7b947}{get\+All\+Component\+Query}} ()
+\begin{DoxyCompactList}\small\item\em Proporciona una consulta SQL lista para exportar componentes (por ejemplo, en reportes). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDatabaseManager_a6b2d06cc8150e04985a48cda5cd263f1}{update\+Component}} (int id, const \mbox{\hyperlink{classComponent}{Component}} \&comp)
+\begin{DoxyCompactList}\small\item\em Actualiza un componente existente. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDatabaseManager_ab5e6986d9d1317af0fe8d90d8ab3ecdb}{delete\+Component}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina un componente por su ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada de manejar la conexión con una base de datos SQLite y realizar operaciones CRUD sobre objetos de tipo \doxylink{classComponent}{Component}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDatabaseManager_aea79493087049fbd0e94217ebc31a50e}\label{classDatabaseManager_aea79493087049fbd0e94217ebc31a50e} 
+\index{DatabaseManager@{DatabaseManager}!DatabaseManager@{DatabaseManager}}
+\index{DatabaseManager@{DatabaseManager}!DatabaseManager@{DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{DatabaseManager()}{DatabaseManager()}}
+{\footnotesize\ttfamily Database\+Manager\+::\+Database\+Manager (\begin{DoxyParamCaption}\item[{const QString \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor de la clase. 
+
+Constructor que inicializa la conexión con la base de datos SQLite.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Ruta del archivo de base de datos SQLite.\\
+\hline
+{\em path} & Ruta del archivo de base de datos. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classDatabaseManager_ae9b3a5da1e04fbb00faf8a034da1d063}\label{classDatabaseManager_ae9b3a5da1e04fbb00faf8a034da1d063} 
+\index{DatabaseManager@{DatabaseManager}!````~DatabaseManager@{\texorpdfstring{$\sim$}{\string~}DatabaseManager}}
+\index{````~DatabaseManager@{\texorpdfstring{$\sim$}{\string~}DatabaseManager}!DatabaseManager@{DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DatabaseManager()}{\string~DatabaseManager()}}
+{\footnotesize\ttfamily Database\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Database\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. Cierra la base de datos si está abierta. 
+
+Destructor. Cierra la base de datos al destruir el objeto. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDatabaseManager_ae605d0352700638f1c41327c4ff9a032}\label{classDatabaseManager_ae605d0352700638f1c41327c4ff9a032} 
+\index{DatabaseManager@{DatabaseManager}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!DatabaseManager@{DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::add\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComponent}{Component}} \&}]{comp }\end{DoxyParamCaption})}
+
+
+
+Inserta un nuevo componente en la base de datos. 
+
+Inserta un nuevo componente en la tabla de base de datos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & Componente a insertar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la operación fue exitosa.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & Objeto \doxylink{classComponent}{Component} con los datos a insertar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si el insert fue exitoso, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classDatabaseManager_ab5e6986d9d1317af0fe8d90d8ab3ecdb}\label{classDatabaseManager_ab5e6986d9d1317af0fe8d90d8ab3ecdb} 
+\index{DatabaseManager@{DatabaseManager}!deleteComponent@{deleteComponent}}
+\index{deleteComponent@{deleteComponent}!DatabaseManager@{DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{deleteComponent()}{deleteComponent()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::delete\+Component (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Elimina un componente por su ID. 
+
+Elimina un componente de la base de datos por su ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID del componente a eliminar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la operación fue exitosa.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID del componente a eliminar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se eliminó correctamente. 
+\end{DoxyReturn}
+\Hypertarget{classDatabaseManager_a103a3becac6af79bcc1bed7c7ee7b947}\label{classDatabaseManager_a103a3becac6af79bcc1bed7c7ee7b947} 
+\index{DatabaseManager@{DatabaseManager}!getAllComponentQuery@{getAllComponentQuery}}
+\index{getAllComponentQuery@{getAllComponentQuery}!DatabaseManager@{DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{getAllComponentQuery()}{getAllComponentQuery()}}
+{\footnotesize\ttfamily QSql\+Query Database\+Manager\+::get\+All\+Component\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Proporciona una consulta SQL lista para exportar componentes (por ejemplo, en reportes). 
+
+Devuelve una consulta SQL con todos los componentes (para reportes).
+
+\begin{DoxyReturn}{Returns}
+QSql\+Query con los resultados.
+
+QSql\+Query listo para ser leído. 
+\end{DoxyReturn}
+\Hypertarget{classDatabaseManager_a21886f1700053d9d8142707fa8875ad2}\label{classDatabaseManager_a21886f1700053d9d8142707fa8875ad2} 
+\index{DatabaseManager@{DatabaseManager}!getAllComponents@{getAllComponents}}
+\index{getAllComponents@{getAllComponents}!DatabaseManager@{DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{getAllComponents()}{getAllComponents()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{classComponent}{Component}} $>$ Database\+Manager\+::get\+All\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Recupera todos los componentes almacenados. 
+
+Recupera todos los componentes de la base de datos como lista.
+
+\begin{DoxyReturn}{Returns}
+Lista de \doxylink{classComponent}{Component}.
+
+QList$<$\+Component$>$ con todos los registros existentes. 
+\end{DoxyReturn}
+\Hypertarget{classDatabaseManager_abf0518515ed9ec59c91bd4d3a39f7319}\label{classDatabaseManager_abf0518515ed9ec59c91bd4d3a39f7319} 
+\index{DatabaseManager@{DatabaseManager}!openDatabase@{openDatabase}}
+\index{openDatabase@{openDatabase}!DatabaseManager@{DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{openDatabase()}{openDatabase()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::open\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Abre la base de datos y crea la tabla si no existe. 
+
+\begin{DoxyReturn}{Returns}
+true si se abre correctamente, false si hay error.
+
+true si la operación fue exitosa, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classDatabaseManager_abd727d0648910b810072a1d119b3d91b}\label{classDatabaseManager_abd727d0648910b810072a1d119b3d91b} 
+\index{DatabaseManager@{DatabaseManager}!searchComponents@{searchComponents}}
+\index{searchComponents@{searchComponents}!DatabaseManager@{DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{searchComponents()}{searchComponents()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{classComponent}{Component}} $>$ Database\+Manager\+::search\+Components (\begin{DoxyParamCaption}\item[{const QString \&}]{keyword }\end{DoxyParamCaption})}
+
+
+
+Busca componentes según palabra clave (en nombre, tipo o ubicación). 
+
+Busca componentes cuyo nombre, tipo o ubicación coincidan con una palabra clave.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyword} & Palabra clave a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de coincidencias.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em keyword} & Palabra clave para buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de componentes coincidentes. 
+\end{DoxyReturn}
+\Hypertarget{classDatabaseManager_a6b2d06cc8150e04985a48cda5cd263f1}\label{classDatabaseManager_a6b2d06cc8150e04985a48cda5cd263f1} 
+\index{DatabaseManager@{DatabaseManager}!updateComponent@{updateComponent}}
+\index{updateComponent@{updateComponent}!DatabaseManager@{DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{updateComponent()}{updateComponent()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::update\+Component (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{const \mbox{\hyperlink{classComponent}{Component}} \&}]{comp }\end{DoxyParamCaption})}
+
+
+
+Actualiza un componente existente. 
+
+Actualiza un componente existente en la base de datos según su ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID del componente a actualizar. \\
+\hline
+{\em comp} & Datos actualizados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la operación fue exitosa.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del componente a actualizar. \\
+\hline
+{\em comp} & Datos nuevos del componente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la actualización fue exitosa. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{databasemanager_8h}{databasemanager.\+h}}\item 
+\mbox{\hyperlink{databasemanager_8cpp}{databasemanager.\+cpp}}\end{DoxyCompactItemize}
